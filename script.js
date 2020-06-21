@@ -30,3 +30,10 @@ book2Chapters[3].after(book2Chapters[8]);
 book2Chapters[3].after(book2Chapters[6]);
 
 let book5Chapters = book5.querySelector('ul').querySelectorAll('li');
+book5Chapters[4].after(book5Chapters[2]);
+book5Chapters[7].after(book5Chapters[5]);
+book5Chapters[1].after(book5Chapters[9]);
+
+let book6Chapter8 = document.createElement('li');
+book6Chapter8.textContent = 'Глава 8: За пределами ES6';
+book6.querySelectorAll('li')[9].before(book6Chapter8);
